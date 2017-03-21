@@ -1,0 +1,211 @@
+.index-header {
+    text-align: center
+}
+
+.index-header .logo {
+    margin: 0 auto;
+    width: 160px;
+    height: 74px;
+    /*background: url(/static/revved/img/index/logo.6837e927.png) no-repeat;*/
+    /*background-size: contain*/
+}
+
+@media (max-width: 740px) {
+    .index-header .logo {
+        width: 96px;
+        height: 44.4px
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx),(min-resolution: 192dpi) {
+    .index-header .logo {
+        /*background-image: url(/static/revved/img/index/logo@2x.e4e2b466.png)*/
+    }
+}
+
+.index-header .logo.org-logo {
+    margin-top: 30px;
+    width: 178px;
+    height: 41px;
+    /*background-image: url(/static/revved/img/org/signup/logo.57fac9a5.png)*/
+}
+
+@media (max-width: 740px) {
+    .index-header .logo.org-logo {
+        margin-top: 0;
+        width: 142.4px;
+        height: 32.8px
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx),(min-resolution: 192dpi) {
+    .index-header .logo.org-logo {
+        /*background-image: url(/static/revved/img/org/signup/logo@2x.ce86aca0.png)*/
+    }
+}
+
+.index-header .subtitle {
+    margin: 30px 0 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1
+}
+
+.index-tab-navs {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center
+}
+
+.index-tab-navs .navs-slider {
+    position: relative;
+    display: inline-block
+}
+
+.index-tab-navs .navs-slider .navs-slider-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0 .8em;
+    width: 2.4em;
+    height: 2px;
+    background: #0f88eb;
+    -webkit-transition: left .15s ease-in;
+    transition: left .15s ease-in
+}
+
+.index-tab-navs .navs-slider[data-active-index="1"] .navs-slider-bar {
+    left: 4em
+}
+
+.index-tab-navs a {
+    float: left;
+    width: 4em;
+    line-height: 35px;
+    opacity: .7;
+    -ms-filter: "alpha(Opacity=70)";
+    -webkit-transition: opacity .15s, color .15s;
+    transition: opacity .15s, color .15s
+}
+
+html.no-touchevents .index-tab-navs a:hover {
+    opacity: 1;
+    -ms-filter: "alpha(Opacity=100)";
+    text-decoration: none
+}
+
+.index-tab-navs a.active {
+    opacity: 1;
+    -ms-filter: "alpha(Opacity=100)";
+    color: #0f88eb
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+    background: #f7fafc;
+    -webkit-font-smoothing: subpixel-antialiased
+}
+
+.index-main {
+    min-height: 100%;
+    margin-bottom: -42px
+}
+
+@media (max-width: 740px) {
+    .index-main {
+        margin-bottom: -102px
+    }
+}
+
+.index-main-body {
+    margin: auto;
+    padding: 30px 0 102px;
+    width: 300px
+}
+
+@media (min-width: 741px) {
+    .index-main {
+        text-align: center;
+        white-space: nowrap;
+        height: 100%;
+        min-height: 720px
+    }
+
+    .index-main:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -.25em
+    }
+
+    .index-main-body {
+        padding: 0;
+        min-height: 590px;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        white-space: normal
+    }
+}
+
+@media (min-width: 741px) and (max-height: 600px) {
+    .index-main {
+        height: auto;
+    }
+}
+
+.footer {
+    font-size: 12px;
+    line-height: 21px;
+    text-align: center
+}
+
+.footer-desktop-hide {
+    display: none
+}
+
+@media (max-width: 740px) {
+    .footer {
+        padding-bottom: 60px;
+        line-height: 42px
+    }
+
+    .footer :not(.footer-mobile-show) {
+        display: none
+    }
+
+    .footer .footer-desktop-hide {
+        display: inline-block
+    }
+}
+
+.footer span, .footer a {
+    color: #aebdc9
+}
+
+.footer span a {
+    color: #698ebf
+}
+
+.footer .dot {
+    margin: 0 3px
+}
+.display{
+    display:block ;
+}
+.hidden{
+    display: none;
+}
+.Wx-sgin{
+    font-size: 0.7rem;
+    color: #555;
+
+}
