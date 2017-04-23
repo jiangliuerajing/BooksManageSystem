@@ -101,7 +101,7 @@ public interface ManagerMapper {
     @Insert("insert into manager(manager,password) values(#{manager}, #{password})")
     void addManager(@Param(value = "manager") String manager,@Param(value = "password") String password);
 
-    @Update("update manager set password='#{newPassword}'where manager=#{manager}")
+    @Update("update manager set password=#{newPassword} where manager=#{manager}")
     void updataPassword(@Param(value = "manager") String manager,@Param(value = "newPassword") String newPassword);
 
     @Delete("delete from user where userid=#{userid}")

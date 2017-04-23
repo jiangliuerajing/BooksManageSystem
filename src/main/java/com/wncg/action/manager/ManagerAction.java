@@ -9,27 +9,26 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
 /**
- * Created by BZhao on 2017/3/12.
+ * Created by jing on 2017/4/23.
  */
+
 @Controller
-@SessionAttributes("manager")
-public class BooksManageAction {
+public class ManagerAction {
+
     @Autowired
     ManagerService managerService;
-
 
     @RequestMapping(value = "loginIn")
     @ResponseBody
     public JSONObject loginIn(Manager manager, ModelMap modelMap){
-      JSONObject result=managerService.loginIn(manager.getManager(),manager.getPassword());
-      if(result.containsKey("success")){
-          modelMap.addAttribute("manager",manager);
-      }
-      return result;
+        JSONObject result=managerService.loginIn(manager.getManager(),manager.getPassword());
+        if(result.containsKey("success")){
+            modelMap.addAttribute("manager",manager);
+        }
+        return result;
     }
 
     @RequestMapping(value = "logout")
@@ -47,15 +46,15 @@ public class BooksManageAction {
 
     @RequestMapping(value = "updataPassword")
     @ResponseBody
-    public JSONObject updataPassword(String manager,String newPassword){
-        return managerService.updataPassword(manager,newPassword);
+    public JSONObject updatePassword(String manager,String newPassword){
+        return managerService.updatePassword(manager,newPassword);
     }
 
-    @RequestMapping(value = "deleteUser")
-    @ResponseBody
-    public void deleteUser(int userid){
-        managerService.deleteUser(userid);
-    }
+
+
+
+
+
 
 
 }

@@ -48,7 +48,7 @@ public class ManagerServiceImpl implements ManagerService{
         return result;
     }
 
-    public JSONObject updataPassword(String manager,String newPassword){
+    public JSONObject updatePassword(String manager,String newPassword){
         JSONObject result=new JSONObject();
         try {
             managerMapper.updataPassword(manager, newPassword);
@@ -59,12 +59,5 @@ public class ManagerServiceImpl implements ManagerService{
         return result;
     }
 
-    public void deleteUser(int userid){
-        try {
-            managerMapper.deleteUser(userid);
-        }catch (Exception e){
-            System.out.println("删除失败");
-        }
-    }
 
 }

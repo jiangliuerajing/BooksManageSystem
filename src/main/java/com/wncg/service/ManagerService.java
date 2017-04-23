@@ -11,8 +11,7 @@ public interface ManagerService {
 
     JSONObject addManager(String manager,String password);
 
-    JSONObject updataPassword(String manager,String newPassword);
+    JSONObject updatePassword(String manager,String newPassword);
 
-    void deleteUser(int userid);
 
 }
