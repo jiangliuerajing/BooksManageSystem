@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
 <generatorConfiguration >
-    <classPathEntry location="E:\Software\jdbc\mysql-connector-java-5.1.7-bin.jar"/>
+    <classPathEntry location="D:\mysql-connector-java-5.1.40\mysql-connector-java-5.1.40-bin.jar"/>
     <context id="context1" >
         <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://112.74.37.240:3306/BooksManageSystem?useUnicode=true&amp;characterEncoding=UTF-8" userId="root" password="25p3zjif" />
         <!-- 生成实体类 -->
         <javaModelGenerator targetPackage="com.wncg.po" targetProject="src/main/java" />
         <!-- 生成mapxml文件 -->
-        <sqlMapGenerator targetPackage="com.wncg.dao" targetProject="src/main/java" />
+        <sqlMapGenerator targetPackage="com.wncg.mapper" targetProject="src/main/java" />
         <!-- 生成dao -->
         <javaClientGenerator targetPackage="com.wncg.dao" targetProject="src/main/java" type="XMLMAPPER" />
-        <table schema="" tableName="book" />
-        <table schema="" tableName="borrow_record" />
-        <table schema="" tableName="subject" />
-        <table schema="" tableName="search_record" />
+        <table schema="" tableName="manager" />
 
     </context>
 </generatorConfiguration>
