@@ -2,6 +2,7 @@ package com.wncg.action;
 
 
 import com.wncg.action.user.SearchAction;
+import net.sf.json.JSONObject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -25,7 +26,8 @@ public class SearchActionTest extends AbstractJUnit4SpringContextTests{
      */
     @Test
     public void testGetSearchHistory(){
-        searchAction.getSearchHistory("1");
+         JSONObject aa = searchAction.getSearchHistory("1");
+        System.out.println(aa);
     }
 
 }

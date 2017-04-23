@@ -4,7 +4,7 @@
     <classPathEntry location="D:\mysql-connector-java-5.1.40\mysql-connector-java-5.1.40-bin.jar"/>
     <context id="context1" >
         <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://112.74.37.240:3306/BooksManageSystem?useUnicode=true&amp;characterEncoding=UTF-8" userId="root" password="25p3zjif" />
-        <!-- 生成实体类 -->
+        <!-- 生成实体�? -->
         <javaModelGenerator targetPackage="com.wncg.po" targetProject="src/main/java" />
         <!-- 生成mapxml文件 -->
         <sqlMapGenerator targetPackage="com.wncg.mapper" targetProject="src/main/java" />
